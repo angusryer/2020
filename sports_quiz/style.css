@@ -1,0 +1,106 @@
+body {
+    background-color: #87CEEB;
+    font-size: 110%;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #483D8B; 
+}
+
+h1, h2, h3, h4 {
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 5rem;
+    color: #000000;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+h1 > span {
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 4.2rem;
+    margin-bottom: 4rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* center the content */
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0auto;
+    padding: 6rem; /* boxes will not be against the edge of screen */
+}
+
+/* child of container */
+.container > * {
+    width: 100%;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.hidden {
+    display: none; 
+}
+
+/* style buttons */
+.btn {
+    font-size: 2.0rem;
+    padding: 1rem 0;
+    width: 13rem;
+    text-align: center;
+    border: 0.1rem solid rgb(0, 0, 133);
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: rgb(0, 0, 133); /* text color */
+    background-color: #FFFFFF;
+    font-style: italic;
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.5rem 1.5rem 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+
+.btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
