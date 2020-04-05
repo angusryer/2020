@@ -8,7 +8,7 @@ let database
 // make folder available within the route of the server
 myApp.use(express.static('public'))
 // connect to mongodb; connection must be made before the submittal process goes through
-let databaseConnectionString = 'mongodb+srv://toDoListUser:012345@cluster0-hdeax.mongodb.net/ToDoList?retryWrites=true&w=majority'
+let databaseConnectionString = ''
 // client contains info about mongodb environment the app is connected to
 mongodb.connect(databaseConnectionString, {useNewUrlParser: true, useUnifiedTopology: true}, function(err, client) {
     database = client.db()
