@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 400px;
+    margin-bottom: 100px;
+    clear: both;
+}
+
+/* header */
+
+.header {
+    overflow: hidden;
+    background-color: #00FFFF;
+    padding: 5px 5px;
+}
+
+.header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+.header a.logo {
+    font-size: 20px;
+    font-weight: bolder;
+    text-shadow: 2px 2px rgb(62, 97, 212);
+}
+
+.header a:hover {
+    background-color: #FFFFFF;
+    color: #6495ED;
+    text-decoration: underline #000000;
+}
+
+.header a.active {
+    background-color: #FFFFFF;
+    color: #6495ED;
+    border-top: #000000;
+    border-bottom: #000000;
+    border-left: #000000;
+    border-right: #000000;
+}
+
+.header-right {
+    float: right;
+}
+
+/* mobile responsive */
+@media screen and (max-width: 500px) {
+    .header a {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+    .header-right {
+        float: none;
+        display: block;
+    }
+}
+
+/* container */
+
+.container-index {
+    text-align: center;
+}
+
+.container-about {
+    word-wrap: break-word;
+    text-align: center;
+}
+
+/* FAQ */
+
+h2.FAQ {
+    text-align: center;
+}
+
+/* contact form  */
+.contact-form {
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #1E90FF;
+    float: center;
+    width: 35%;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid #000000;
+    border-radius: 5px;
+    padding: 20px;  
+}
+
+input[type=text], textarea {
+    width: 80%;
+    padding: 15px;
+    border: 3px solid #CCCCCC;
+    margin-top: 3px;
+    margin-bottom: 16px;
+    resize: vertical;
+    border-color: #000000;
+}
+
+input[type=submit] {
+    background-color: #000000;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #E6E6FA;
+    color: #000000
+}
+
+/* appointments form */
+.appointments-form {
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #1E90FF;
+    float: center;
+    width: 35%;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid #000000;
+    border-radius: 5px;
+    padding: 20px;  
+}
+
+input[type=text], textarea {
+    width: 80%;
+    padding: 15px;
+    border: 3px solid #CCCCCC;
+    margin-top: 3px;
+    margin-bottom: 16px;
+    resize: vertical;
+    border-color: #000000;
+}
+
+input[type=submit] {
+    background-color: #000000;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #E6E6FA;
+    color: #000000
+}
+
+.datetime-local {
+    border-color: #000000;
+    border: 2px solid #000000;
+}
+
+/* footer */
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #00FFFF;
+    color: #000000;
+    text-align: center;
+    margin-top: auto;
+    font-style: oblique;
+}
